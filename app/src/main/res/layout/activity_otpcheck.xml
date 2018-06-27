@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="54dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PLEASE ENTER YOUR OTP"
+        android:id="@+id/otp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="30dp"
+
+        android:background="@drawable/button_background"
+
+        android:layout_below="@+id/otp"
+        android:text="SUBMIT"/>
+    <requestFocus/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resend"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/otp"
+        android:background="@drawable/button_background"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:text="resend"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/resend"
+        android:layout_alignParentRight="true"
+        android:id="@+id/timer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/send"
+        android:id="@+id/error"/>
+
+</RelativeLayout>
